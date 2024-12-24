@@ -10,7 +10,7 @@ zrapi.snaptik("https://vt.tiktok.com/khpq9t")
   });
 
 // Fetching data from Textpro (likely to apply some text effects on the video or URL)
-zrapi.textpro("https://textpro.me/create-blackpink-logo-style-online-1001.html")
+zrapi.textpro("https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html")
   .then(data => {
     // Assuming the response contains 'text' property, if not, you can log the whole data
     console.log("Textpro Data:", data);
@@ -20,7 +20,7 @@ zrapi.textpro("https://textpro.me/create-blackpink-logo-style-online-1001.html")
   });
 
 // Fetching data from Photooxy (likely to apply photo effects)
-zrapi.photooxy("https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html")
+zrapi.photooxy("https://photooxy.com/logo-and-text-effects/create-a-picture-of-love-message-377.html")
   .then(data => {
     // Assuming the response contains 'text' or 'text2' property, log it or the entire response
     console.log("Photooxy Data:", data);
