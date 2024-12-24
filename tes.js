@@ -1,30 +1,36 @@
-const zrapi = require("./src/index");
+const zrapi = require("./src/index.js");
 
-// Fetching data from Snaptik (likely to download or extract video)
-zrapi.snaptik("https://vt.tiktok.com/khpq9t")
-  .then(data => {
-    console.log("Snaptik Data:", data);
-  })
-  .catch(e => {
-    console.error("Error in Snaptik:", e);
-  });
+//TextPro
+zrapi
+  .textpro("https://textpro.me/create-blackpink-logo-style-online-1001.html", [
+    "teks",
+  ])
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
 
-// Fetching data from Textpro (likely to apply some text effects on the video or URL)
-zrapi.textpro("https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html")
-  .then(data => {
-    // Assuming the response contains 'text' property, if not, you can log the whole data
-    console.log("Textpro Data:", data);
-  })
-  .catch(e => {
-    console.error("Error in Textpro:", e);
-  });
+//TextPro with 2 text
+zrapi
+  .textpro(
+    "https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html",
+    ["teks", "teks 2"]
+  )
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
 
-// Fetching data from Photooxy (likely to apply photo effects)
-zrapi.photooxy("https://photooxy.com/logo-and-text-effects/create-a-picture-of-love-message-377.html")
-  .then(data => {
-    // Assuming the response contains 'text' or 'text2' property, log it or the entire response
-    console.log("Photooxy Data:", data);
-  })
-  .catch(e => {
-    console.error("Error in Photooxy:", e);
-  });
+//Photooxy
+zrapi
+  .photooxy(
+    "https://photooxy.com/logo-and-text-effects/create-a-picture-of-love-message-377.html",
+    ["teks"]
+  )
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
+
+//Photooxy with 2 text
+zrapi
+  .photooxy(
+    "https://photooxy.com/logo-and-text-effects/make-tik-tok-text-effect-375.html",
+    ["teks", "Teks 2"]
+  )
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
