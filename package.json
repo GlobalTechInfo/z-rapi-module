@@ -9,8 +9,8 @@
   "author": "Rizqi a.k.a ZefianAlfian",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.1",
-    "cheerio": "^1.0.0-rc.5",
+    "axios": "^0.26.1",
+    "cheerio": "^1.0.0-rc.12",
     "cookie": "^0.4.1",
     "form-data": "^4.0.0",
     "instatouch": "^2.3.3",
